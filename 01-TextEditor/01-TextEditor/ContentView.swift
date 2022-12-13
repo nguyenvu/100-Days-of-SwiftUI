@@ -9,14 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var textInput = ""
+    @State private var wordCount: Int = 0
     var body: some View {
         
         TextEditor(text: $textInput)
-            .font(.title)
+            .font(.body)
             .lineSpacing(15)
             .autocapitalization(.words)
             .disableAutocorrection(true)
-        .padding()
+            .background(Color.green)
+            .padding(.all, 1.0)
     }
 }
 
