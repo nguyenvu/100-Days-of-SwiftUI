@@ -14,6 +14,10 @@ struct ContentView: View {
             Button("Tap me!"){
                 showDetails.toggle();
             }
+            .background(Color(red: 0, green: 0, blue: 0.5))
+            .padding(.all, 8.0)
+            .clipShape(Capsule())
+            
             if showDetails {
                 Text("You should follow me on Twitter: @nguyenvu")
                     .font(.title3)
